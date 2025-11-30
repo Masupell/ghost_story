@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://0l5a4i5uhihl"]
+[gd_scene load_steps=3 format=3 uid="uid://0l5a4i5uhihl"]
 
 [ext_resource type="Script" uid="uid://suoj8yg45flm" path="res://World/world.gd" id="1_62w18"]
+[ext_resource type="PackedScene" uid="uid://dw4drtlf6vn8h" path="res://Player/player.tscn" id="2_8a836"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_62w18")
+
+[node name="Player" parent="." instance=ExtResource("2_8a836")]
+z_index = 1
